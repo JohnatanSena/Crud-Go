@@ -24,7 +24,6 @@ func DeleteUsers(c *fiber.Ctx) error {
 	}
 	if user.Firstname == user.Firstname {
 		delete(Inmemory, 1)
-		fmt.Println(Inmemory)
 		return c.SendString("Usuário excluído com sucesso")
 	}
 	fmt.Println(Inmemory[1])
